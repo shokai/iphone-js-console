@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 require 'rubygems'
+require 'eventmachine'
 require 'em-websocket'
+require 'readline'
 
 EM::run do
 
@@ -27,7 +29,8 @@ EM::run do
 
   EM::defer do
     loop do
-      @channel.push(gets.gsub(/[\r\n]/,''))
+      line = Readline.readline("> ", true)
+      @channel.push(line) if line.size > 0
     end
   end
 

@@ -16,6 +16,11 @@ Install Dependencies
     % gem install eventmachine em-websocket
 
 
+for Mac OSX
+
+    % brew install readline
+
+
 
 Use
 ===
@@ -48,6 +53,6 @@ log.
     <input onClick='c.log(new Date())' type='button' value='push' />
 
 
-interactive shell. iPhone evals scripts from server.
+interactive js shell. iPhone evals scripts from server.
 
     c.log(navigator.userAgent);

@@ -55,4 +55,11 @@ log.
 
 interactive js shell. iPhone evals scripts from server.
 
-    c.log(navigator.userAgent);
+    > <1> connected!!
+    > a = new Array()
+    > a.push(1)
+    > a.push(2)
+    > a.push(3)
+    > c.log(a)
+    <1> 1,2,3
+

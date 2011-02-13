@@ -6,15 +6,11 @@
       //<![CDATA[
         var c = new JsConsole();
         c.start('ws://192.168.1.35:8088');
-        
-        function push(){
-          c.log(new Date());
-        };
       //]]>
     </script>
   </head>
   <body>
     <h1>iPhone JS Console Sample</h1>
-    <input onClick='push()' type='button' value='push' />
+    <input onClick='c.log(new Date())' type='button' value='push' />
   </body>
 </html>

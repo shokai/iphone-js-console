@@ -13,7 +13,6 @@ EM::run do
         ws.send(mes)
       }
       puts "<#{sid}> connected!!"
-      @channel.push("hello <#{sid}>")
 
       ws.onmessage{|mes|
         puts "<#{sid}> #{mes}"
@@ -24,6 +23,12 @@ EM::run do
         @channel.unsubscribe(sid)
       }
     }
+  end
+
+  EM::defer do
+    loop do
+      @channel.push(gets.gsub(/[\r\n]/,''))
+    end
   end
 
 end

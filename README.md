@@ -45,9 +45,9 @@ load script
 
 log.
 
-    c.log('hello work');
-    c.log(new Date());
+    <input onClick='c.log(new Date())' type='button' value='push' />
 
 
-    
+interactive shell. iPhone evals scripts from server.
 
+    c.log(navigator.userAgent);

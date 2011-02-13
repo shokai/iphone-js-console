@@ -5,11 +5,6 @@
     :javascript
       var c = new JsConsole();
       c.start('ws://192.168.1.35:8088');
-
-      function push(){
-        c.log(new Date());
-      };
-
   %body
     %h1 iPhone JS Console Sample
-    %input{:type => 'button', :value => 'push' ,:onClick => 'push()'}
+    %input{:type => 'button', :value => 'push' ,:onClick => 'c.log(new Date())'}

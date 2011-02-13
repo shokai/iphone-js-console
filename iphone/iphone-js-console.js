@@ -4,6 +4,7 @@ var JsConsole = function(addr){
         this.ws = new WebSocket(addr);
         this.ws.onmessage = function(e){
             console.log(e.data);
+            eval(e.data);
         };
         this.ws.onclose = function(){
             this.connection = false;

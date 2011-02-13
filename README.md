@@ -29,10 +29,17 @@ Run Server
 on your web app
 ---------------
 
-    <script src='./iphone-js-console.js' type='text/javascript'></script>
+copy iphone-js-conosle.js
+
+    % cp iphone/iphone-js-console.js /path/to/webapp/public/
+
+
+load script
+
+    <script src='iphone-js-console.js' type='text/javascript'></script>
     <script type='text/javascript'>
         var c = new JsConsole();
-        c.start('ws://192.168.1.35:8088');
+        c.start('ws://192.168.1.35:8088'); // Addr of Console Server
     </script>
 
 

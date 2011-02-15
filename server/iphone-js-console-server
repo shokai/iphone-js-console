@@ -3,6 +3,8 @@ require 'rubygems'
 require 'eventmachine'
 require 'em-websocket'
 require 'readline'
+require 'json'
+require 'pp'
 
 EM::run do
 
@@ -17,7 +19,14 @@ EM::run do
       puts "<#{sid}> connected!!"
 
       ws.onmessage{|mes|
-        puts "<#{sid}> #{mes}"
+        print "<#{sid}> "
+        begin
+          o = JSON.parse(mes)
+          puts ''
+          pp o
+        rescue
+          puts mes
+        end
       }
 
       ws.onclose{

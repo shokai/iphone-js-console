@@ -16,6 +16,13 @@ var JsConsole = function(addr){
         };
     };
     this.log = function(message){
-        this.ws.send(message);
+        var result;
+        try{
+            result = JSON.stringify(message);
+        }
+        catch(e){
+            result = message;
+        }
+        this.ws.send(result);
     };
 };

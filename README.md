@@ -56,10 +56,33 @@ log.
 interactive js shell. iPhone evals scripts from server.
 
     > <1> connected!!
+    > c.log('hello')
+    > <1> "hello"
+
+
+dump object
+
+
     > a = new Array()
     > a.push(1)
     > a.push(2)
     > a.push(3)
     > c.log(a)
-    <1> 1,2,3
+    > <1> 
+    [1, 2, 3]
 
+
+watch browser status
+
+
+    > c.log(location);
+    > <1> 
+    {"href"=>"http://localhost:8080/debug-sample.html",
+     "hash"=>"",
+     "port"=>"8080",
+     "protocol"=>"http:",
+     "origin"=>"http://localhost:8080",
+     "pathname"=>"/debug-sample.html",
+     "hostname"=>"localhost",
+     "host"=>"localhost:8080",
+     "search"=>""}

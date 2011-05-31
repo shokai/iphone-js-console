@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <html>
   <head>
+    <title>iphone js console sample</title>
     <script src='./iphone-js-console.js' type='text/javascript'></script>
     <script type='text/javascript'>
       //<![CDATA[
-        var c = new JsConsole();
-        c.start('ws://192.168.1.35:8088');
+        JsConsole.start('ws://192.168.1.38:8088');
       //]]>
     </script>
   </head>
   <body>
     <h1>iPhone JS Console Sample</h1>
-    <input onClick='c.log(new Date())' type='button' value='push' />
+    <input onClick='console.log(new Date())' type='button' value='push' />
   </body>
 </html>

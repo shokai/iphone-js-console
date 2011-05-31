@@ -43,20 +43,19 @@ load script
 
     <script src='iphone-js-console.js' type='text/javascript'></script>
     <script type='text/javascript'>
-        var c = new JsConsole();
-        c.start('ws://192.168.1.35:8088'); // Addr of Console Server
+        JsConsole.start('ws://192.168.1.35:8088'); // Addr of Console Server
     </script>
 
 
 log.
 
-    <input onClick='c.log(new Date())' type='button' value='push' />
+    <input onClick='console.log(new Date())' type='button' value='push' />
 
 
 interactive js shell. iPhone evals scripts from server.
 
     > <1> connected!!
-    > c.log('hello')
+    > console.log('hello')
     > <1> "hello"
 
 
@@ -67,7 +66,7 @@ dump object
     > a.push(1)
     > a.push(2)
     > a.push(3)
-    > c.log(a)
+    > console.log(a)
     > <1> 
     [1, 2, 3]
 
@@ -75,7 +74,7 @@ dump object
 watch browser status
 
 
-    > c.log(location);
+    > console.log(location);
     > <1> 
     {"href"=>"http://localhost:8080/debug-sample.html",
      "hash"=>"",

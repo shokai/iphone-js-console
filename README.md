@@ -75,7 +75,7 @@ iPhone evals scripts from server.
 
 dump object
 
-    > location;
+    > location
     > <1> 
     {"href"=>"http://localhost:8080/debug-sample.html",
      "hash"=>"",

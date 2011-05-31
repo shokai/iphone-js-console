@@ -41,6 +41,7 @@ EM::run do
 
   EM::defer do
     loop do
+      sleep 0.1
       line = Readline.readline("> ", true)
       @channel.push(line) if line.size > 0
     end

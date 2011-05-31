@@ -53,11 +53,13 @@ use console.log(message)
     <input onClick='console.log(new Date())' type='button' value='push' />
 
 
-interactive js shell. iPhone evals scripts from server.
+interactive JavaScript shell.
 
     <1> connected!!
     > alert('hello')
 
+
+iPhone evals scripts from server.
 
     > a = new Array()
     <1> []

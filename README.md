@@ -28,7 +28,8 @@ Use
 Run Server
 ----------
 
-    % ruby server/iphone-js-console-server
+    % cd iphone-js-console
+    % ./iphone-js-console
 
 
 on your web app

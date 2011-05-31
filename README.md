@@ -44,7 +44,7 @@ load script
 
     <script src='iphone-js-console.js' type='text/javascript'></script>
     <script type='text/javascript'>
-        JsConsole.start('ws://192.168.1.35:8088'); // Addr of Console Server
+        JsConsole.start('ws://192.168.1.38:8088'); // Addr of Console Server
     </script>
 
 
@@ -77,13 +77,13 @@ iPhone evals scripts from server.
 dump object
 
     > location
-    > <1> 
-    {"href"=>"http://localhost:8080/debug-sample.html",
+    <1> 
+    {"href"=>"http://192.168.1.38:8080/debug-sample.html",
      "hash"=>"",
      "port"=>"8080",
      "protocol"=>"http:",
-     "origin"=>"http://localhost:8080",
+     "origin"=>"http://192.168.1.38:8080",
      "pathname"=>"/debug-sample.html",
-     "hostname"=>"localhost",
+     "hostname"=>"192.168.1.38",
      "host"=>"localhost:8080",
      "search"=>""}

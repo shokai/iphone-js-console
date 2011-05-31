@@ -57,7 +57,8 @@ interactive JavaScript shell.
 
     <1> connected!!
     > alert('hello')
-
+    > window.navigator.appVersion
+    <1> "5.0 (iPod; U; CPU iPhone OS 4_3_3 like Mac OS X; ja-jp) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5"
 
 iPhone evals scripts from server.
 

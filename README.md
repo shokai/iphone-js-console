@@ -85,5 +85,5 @@ dump object
      "origin"=>"http://192.168.1.38:8080",
      "pathname"=>"/debug-sample.html",
      "hostname"=>"192.168.1.38",
-     "host"=>"localhost:8080",
+     "host"=>"192.168.1.38:8080",
      "search"=>""}

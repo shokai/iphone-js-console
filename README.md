@@ -48,34 +48,32 @@ load script
     </script>
 
 
-log.
+use console.log(message)
 
     <input onClick='console.log(new Date())' type='button' value='push' />
 
 
 interactive js shell. iPhone evals scripts from server.
 
-    > <1> connected!!
-    > console.log('hello')
-    > <1> "hello"
+    <1> connected!!
+    > alert('hello')
+
+
+    > a = new Array()
+    <1> []
+    > a.push(1)
+    <1> 1
+    > a.push(2)
+    <1> 2
+    > a.push(3)
+    <1> 3
+    > a
+    <1> [1, 2, 3]
 
 
 dump object
 
-
-    > a = new Array()
-    > a.push(1)
-    > a.push(2)
-    > a.push(3)
-    > console.log(a)
-    > <1> 
-    [1, 2, 3]
-
-
-watch browser status
-
-
-    > console.log(location);
+    > location;
     > <1> 
     {"href"=>"http://localhost:8080/debug-sample.html",
      "hash"=>"",

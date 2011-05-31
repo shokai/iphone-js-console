@@ -3,7 +3,12 @@ JsConsole.ws = null;
 JsConsole.start = function(addr){ // addr = "ws://192.168.1.101:8088"
     this.ws = new WebSocket(addr);
     this.ws.onmessage = function(e){
-        eval(e.data);
+        try{
+            eval("console.log("+e.data+")");
+        }
+        catch(e){
+            console.log("error : "+e.message);
+        }
     };
     this.ws.onclose = function(){
         this.connection = false;

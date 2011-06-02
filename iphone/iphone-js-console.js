@@ -1,5 +1,6 @@
 var JsConsole = {};
 JsConsole.ws = null;
+JsConsole.connected = false;
 JsConsole.start = function(addr){ // addr = "ws://192.168.1.101:8088"
     this.ws = new WebSocket(addr);
     this.ws.onmessage = function(e){
@@ -11,11 +12,11 @@ JsConsole.start = function(addr){ // addr = "ws://192.168.1.101:8088"
         }
     };
     this.ws.onclose = function(){
-        this.connection = false;
+        JsConsole.connected = false;
         alert('js console - server closed');
     };
     this.ws.onopen = function(){
-        this.connection = true;
+        JsConsole.connected = true;
         alert('js console - start');
     };
 };

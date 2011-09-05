@@ -30,7 +30,7 @@ JsConsole.start = function(addr){ // addr = "ws://192.168.1.101:8088"
     }, 1000);
 };
 JsConsole.send = function(message){
-    this.ws.send(message);
+    if(JsConsole.connected) this.ws.send(message);
 };
 
 window.console._log = window.console.log;
